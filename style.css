@@ -9,7 +9,6 @@ body {
     margin-top: 4em;
     background: #3b4252;
     padding: 1em;
-    border-radius: 4px;
 }
 
 * {
@@ -31,10 +30,18 @@ h1 {
     display: block;
     text-decoration: none;
     width: 100%;
-    border-radius: 4px;
     color: white;
     padding: 1em;
     margin-bottom: 0.25em;
+}
+
+.activities {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.75em;
+}
+
+.card, .activities > div {
     transition: 0.25s;
 }
 
@@ -92,17 +99,14 @@ h1 {
     transition: 0.25s;
 }
 
-#content, .socials > *, .card {
+#content, .socials > *, .card, .activities > div {
     box-shadow: 0 4px rgba(0, 0, 0, 0.06125);
 }
 
-.socials > *:hover {
+.socials > *:hover, .activities > div:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px rgba(0, 0, 0, 0.030625);
-}
-
-p:first-child {
-    margin-top: 0;
+    z-index: 1;
 }
 
 footer {
@@ -110,4 +114,53 @@ footer {
     color: rgba(255, 255, 255, 0.25);
     text-align: center;
     font-size: 0.825em;
+}
+
+#content, .card, .activities > div {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.activities > div, .description, .activities > div > a img {
+    height: 8em;
+}
+
+.activities > div {
+    display: flex;
+    background: #434c5e;
+    font-size: 0.78125em;
+}
+
+.description {
+    overflow-y: scroll;
+    padding: 0.5em;
+}
+
+.media-description * {
+    color: #d8dee9 !important;
+}
+
+p:first-child {
+    margin-top: 0;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #2e3440; 
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4c566a;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5e81ac;
 }

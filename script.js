@@ -51,6 +51,10 @@ fetch("https://graphql.anilist.co", options)
 				continue;
 			}
 
+			if (a.status == "rewatched") {
+				a.status += " episode";
+			}
+
 			const element = document.createElement("div");
 
 			const thumbnailLink = document.createElement("a");

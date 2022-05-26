@@ -55,20 +55,24 @@ h1 {
     margin: 0;
 }
 
-.card:nth-of-type(4n + 1) {
-    background: #8fbcbb;
+.card:nth-of-type(n + 1) {
+    background: #bf616a;
 }
 
-.card:nth-of-type(4n + 2) {
-    background: #88c0d0;
+.card:nth-of-type(5n + 2) {
+    background: #d08770;
 }
 
-.card:nth-of-type(4n + 3) {
-    background: #81a1c1;
+.card:nth-of-type(5n + 3) {
+    background: #ebcb8b;
 }
 
-.card:nth-of-type(4n) {
-    background: #5e81ac;
+.card:nth-of-type(5n + 4) {
+    background: #a3be8c;
+}
+
+.card:nth-of-type(5n) {
+    background: #b48ead;
 }
 
 #main {

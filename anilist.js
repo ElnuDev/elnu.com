@@ -39,7 +39,7 @@ fetch("https://graphql.anilist.co", options)
 		});
 	})
 	.then(data => {
-		const container = document.querySelector(".activities");
+		const container = document.querySelector("#anime");
 		container.innerHTML = "";
 		const activities = data.data.Page.activities;
 		let displayedIds = [];

@@ -7,7 +7,8 @@
 	<link rel="stylesheet" href="style.css">
 	<title>Elnu's Homepage</title>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.3/moment.min.js"></script>
-	<script src="script.js"></script>
+	<script src="anilist.js"></script>
+	<script src="rss.js"></script>
 	<script>
 		var _paq = window._paq = window._paq || [];
 		_paq.push(['trackPageView']);
@@ -48,8 +49,12 @@
 			</div>
 		</div>
 		<h3>Recently watched anime from <a href="https://anilist.co/user/Elnu/">AniList</a></h3>
-		<div class="activities">
+		<div id="anime" class="activities">
 			Loading recent anime activity...
+		</div>
+		<h3>Recent posts from <a href="https://blog.elnu.com">blog</a></h3>
+		<div id="posts" class="activities">
+			Loading recent post activity...
 		</div>
 		<br>
 		<div class="socials">

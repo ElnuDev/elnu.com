@@ -81,6 +81,6 @@ fetch("https://graphql.anilist.co", options)
 		}
 	})
 	.catch(error => {
-		document.querySelector(".activities").innerHTML = "Failed to load!";
+		document.querySelector("#anime").innerHTML = "Failed to load!";
 		console.error(error);
 	});

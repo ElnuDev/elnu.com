@@ -1,177 +1,177 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 body {
-    background: #2e3440;
-    text-shadow: 0 1.5px rgba(0, 0, 0, 0.25);
+	background: #2e3440;
+	text-shadow: 0 1.5px rgba(0, 0, 0, 0.25);
 }
 
 #content {
-    width: min(100%, 48em);
-    margin: auto;
-    margin-top: 4em;
-    background: #3b4252;
-    padding: 1em;
+	width: min(100%, 48em);
+	margin: auto;
+	margin-top: 4em;
+	background: #3b4252;
+	padding: 1em;
 }
 
 * {
-    font-family: "Lato", sans-serif;
-    color: #e5e9f0;
-    box-sizing: border-box;
+	font-family: "Lato", sans-serif;
+	color: #e5e9f0;
+	box-sizing: border-box;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    color: #eceff4;
+	color: #eceff4;
 }
 
 h1 {
-    margin-top: 0;
-    border-bottom: 2px solid #434c5e;
+	margin-top: 0;
+	border-bottom: 2px solid #434c5e;
 }
 
 .card {
-    display: block;
-    text-decoration: none;
-    width: 100%;
-    color: white;
-    padding: 1em;
-    margin-bottom: 0.25em;
+	display: block;
+	text-decoration: none;
+	width: 100%;
+	color: white;
+	padding: 1em;
+	margin-bottom: 0.25em;
 }
 
 .activities {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 0.75em;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 0.75em;
 }
 
 .card, .activities > div {
-    transition: 0.25s;
+	transition: 0.25s;
 }
 
 .card:hover {
-    transform: translateX(8px);
+	transform: translateX(8px);
 }
 
 .card > * {
-    margin: 0;
+	margin: 0;
 }
 
 .card {
-    border-left: 4px solid;
-    background: #4c566a;
+	border-left: 4px solid;
+	background: #4c566a;
 }
 
 .card:nth-of-type(5n + 1) {
-    border-color: #bf616a;
+	border-color: #bf616a;
 }
 
 .card:nth-of-type(5n + 2) {
-    border-color: #d08770;
+	border-color: #d08770;
 }
 
 .card:nth-of-type(5n + 3) {
-    border-color: #ebcb8b;
+	border-color: #ebcb8b;
 }
 
 .card:nth-of-type(5n + 4) {
-    border-color: #a3be8c;
+	border-color: #a3be8c;
 }
 
 .card:nth-of-type(5n) {
-    border-color: #b48ead;
+	border-color: #b48ead;
 }
 
 #main {
-    display: flex;
-    gap: 1em;
+	display: flex;
+	gap: 1em;
 }
 
 #main > * {
-    width: 100%;
+	width: 100%;
 }
 
 .socials {
-    display: flex;
-    gap: 0.25em;
-    justify-content: center;
+	display: flex;
+	gap: 0.25em;
+	justify-content: center;
 }
 
 .socials img {
-    width: 2em;
+	width: 2em;
 }
 
 .socials > * {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 3em;
-    height: 3em;
-    border-radius: 100%;
-    background: #4c566a;
-    transition: 0.25s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 3em;
+	height: 3em;
+	border-radius: 100%;
+	background: #4c566a;
+	transition: 0.25s;
 }
 
 #content, .socials > *, .card, .activities > div {
-    box-shadow: 0 4px rgba(0, 0, 0, 0.06125);
+	box-shadow: 0 4px rgba(0, 0, 0, 0.06125);
 }
 
 .socials > *:hover, .activities > div:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 8px rgba(0, 0, 0, 0.030625);
-    z-index: 1;
+	transform: translateY(-4px);
+	box-shadow: 0 8px rgba(0, 0, 0, 0.030625);
+	z-index: 1;
 }
 
 footer {
-    margin-top: 0.5em;
-    color: rgba(255, 255, 255, 0.25);
-    text-align: center;
-    font-size: 0.825em;
+	margin-top: 0.5em;
+	color: rgba(255, 255, 255, 0.25);
+	text-align: center;
+	font-size: 0.825em;
 }
 
 #content, .card, .activities > div {
-    border-radius: 4px;
-    overflow: hidden;
+	border-radius: 4px;
+	overflow: hidden;
 }
 
 .activities > div, .description, .activities > div > a img {
-    height: 8em;
+	height: 8em;
 }
 
 .activities > div {
-    display: flex;
-    background: #434c5e;
-    font-size: 0.78125em;
+	display: flex;
+	background: #434c5e;
+	font-size: 0.78125em;
 }
 
 .description {
-    overflow-y: scroll;
-    padding: 0.5em;
+	overflow-y: scroll;
+	padding: 0.5em;
 }
 
 .media-description * {
-    color: #d8dee9 !important;
+	color: #d8dee9 !important;
 }
 
 p:first-child {
-    margin-top: 0;
+	margin-top: 0;
 }
 
 p:last-child {
-    margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 ::-webkit-scrollbar {
-    width: 8px;
+	width: 8px;
 }
 
 ::-webkit-scrollbar-track {
-    background: #2e3440; 
+	background: #2e3440; 
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #4c566a;
-    border-radius: 4px;
+	background: #4c566a;
+	border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #5e81ac;
+	background: #5e81ac;
 }
